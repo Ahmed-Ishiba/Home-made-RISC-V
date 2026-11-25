@@ -1,0 +1,10 @@
+v 4
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/and_gate.vhd" "36f6cdafd0787310177af1ab2cdbc3c003d34b54" "20261125002724.123":
+  entity and_gate at 1( 0) + 0 on 4;
+  architecture rtl of and_gate at 11( 153) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/or_gate.vhd" "acff7083e86a45ecc09e2ab31db3119dddc6738f" "20261125002724.178":
+  entity or_gate at 1( 0) + 0 on 11;
+  architecture rtl of or_gate at 11( 152) + 0 on 12;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "testBench/or_gate_tb.vhd" "6ad09989a98aa38ce0ba24514cf7bd4bfc1cbbcc" "20261125002724.178":
+  entity or_gate_tb at 1( 0) + 0 on 13;
+  architecture sim of or_gate_tb at 7( 78) + 0 on 14;
