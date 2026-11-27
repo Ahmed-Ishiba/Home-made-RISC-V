@@ -1,6 +1,5 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
-use IEEE.STD_LOGIC_ARITH.all;
 entity datapath is
     port (
         clk, reset: in  STD_LOGIC;
