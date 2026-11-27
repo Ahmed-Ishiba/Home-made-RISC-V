@@ -1,10 +1,9 @@
 BUILD := build
 STD   := --std=08 --workdir=$(BUILD)
-RTL   := $(shell find rtl -name '*.vhd')
-
+RTL := $(shell grep -rliE '^[[:space:]]*(entity|package)[[:space:]]' --include='*.vhd' rtl)
 NAME  ?=
-TOP   := $(NAME)_tb
-TB    := testBench/$(TOP).vhd
+TOP   := tb_$(NAME)
+TB    := testBench/tb_$(NAME).vhd
 DUT   := rtl/$(NAME).vhd
 WAVE  := $(BUILD)/$(NAME).ghw
 

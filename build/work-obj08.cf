@@ -8,3 +8,9 @@ file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/or_gate.vhd" "acff7083
 file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "testBench/or_gate_tb.vhd" "6ad09989a98aa38ce0ba24514cf7bd4bfc1cbbcc" "20261125002724.178":
   entity or_gate_tb at 1( 0) + 0 on 13;
   architecture sim of or_gate_tb at 7( 78) + 0 on 14;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/alu.vhd" "31eb133455a67553e3ce669b4f646820c624ea28" "20261125121830.414":
+  entity alu at 1( 0) + 0 on 15;
+  architecture rtl of alu at 15( 378) + 0 on 16;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "testBench/tb_alu.vhd" "017f0baeaf0bdfe45c4f777f84f09f5e6511e9b4" "20261125121830.414":
+  entity tb_alu at 1( 0) + 0 on 17;
+  architecture sim of tb_alu at 8( 94) + 0 on 18;
