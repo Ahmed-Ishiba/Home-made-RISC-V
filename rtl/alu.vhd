@@ -4,11 +4,11 @@ use ieee.numeric_std.all;
 
 entity alu is
     port (
-        a      : in  std_logic_vector(31 downto 0);
-        b      : in  std_logic_vector(31 downto 0);
-        alu_op : in  std_logic_vector(3 downto 0);  
-        result : out std_logic_vector(31 downto 0);
-        zero   : out std_logic                       
+        a: in  std_logic_vector(31 downto 0);
+        b: in  std_logic_vector(31 downto 0);
+        alu_op: in  std_logic_vector(3 downto 0);  
+        result: out std_logic_vector(31 downto 0);
+        zero: out std_logic                       
     );
 end entity;
 
@@ -18,7 +18,7 @@ begin
         variable res   : std_logic_vector(31 downto 0);
         variable shamt : natural range 0 to 31;
     begin
-        shamt := to_integer(unsigned(b(4 downto 0)));  -- RISC-V uses only 5 bits
+        shamt := to_integer(unsigned(b(4 downto 0)));  
         res   := (others => '0');
 
         case alu_op is
