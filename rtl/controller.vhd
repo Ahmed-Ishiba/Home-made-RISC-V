@@ -14,7 +14,7 @@ entity controller is
         RegWrite: out STD_LOGIC;
         Jump: buffer STD_LOGIC;
         ImmSrc: out STD_LOGIC_VECTOR(1 downto 0);
-        ALUControl: out STD_LOGIC_VECTOR(2 downto 0)
+        ALUControl: out STD_LOGIC_VECTOR(3 downto 0)
     );
 end;
 
@@ -39,7 +39,7 @@ architecture struct of controller is
             funct3: in  STD_LOGIC_VECTOR(2 downto 0);
             funct7b5: in  STD_LOGIC;
             ALUOp: in  STD_LOGIC_VECTOR(1 downto 0);
-            ALUControl: out STD_LOGIC_VECTOR(2 downto 0)
+            ALUControl: out STD_LOGIC_VECTOR(3 downto 0)
         );
     end component;
 

@@ -6,8 +6,8 @@ entity alu is
     port (
         a: in  std_logic_vector(31 downto 0);
         b: in  std_logic_vector(31 downto 0);
-        alu_op: in  std_logic_vector(3 downto 0);  
-        result: out std_logic_vector(31 downto 0);
+        ALUControl: in  std_logic_vector(3 downto 0);  
+        ALUResult: out std_logic_vector(31 downto 0);
         zero: out std_logic                       
     );
 end entity;
@@ -21,7 +21,7 @@ begin
         shamt := to_integer(unsigned(b(4 downto 0)));  
         res   := (others => '0');
 
-        case alu_op is
+        case ALUControl is
             when "0000" => res := std_logic_vector(unsigned(a) + unsigned(b));            -- ADD
             when "1000" => res := std_logic_vector(unsigned(a) - unsigned(b));            -- SUB
             when "0001" => res := std_logic_vector(shift_left(unsigned(a), shamt));       -- SLL
@@ -37,7 +37,7 @@ begin
             when others => res := (others => '0');
         end case;
 
-        result <= res;
+        ALUResult <= res;
         if res = x"00000000" then zero <= '1'; else zero <= '0'; end if;
     end process;
 end architecture;

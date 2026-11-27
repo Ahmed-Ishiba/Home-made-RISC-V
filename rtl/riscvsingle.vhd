@@ -23,7 +23,7 @@ architecture struct of riscvsingle is
             PCSrc,ALUSrc: out STD_LOGIC;
             RegWrite, Jump:out STD_LOGIC;
             ImmSrc: out STD_LOGIC_VECTOR(1 downto 0);
-            ALUControl: out STD_LOGIC_VECTOR(2 downto 0)
+            ALUControl: out STD_LOGIC_VECTOR(3 downto 0)
         );
     end component;
     component datapath
@@ -33,7 +33,7 @@ architecture struct of riscvsingle is
             PCSrc, ALUSrc: in STD_LOGIC;
             RegWrite: in STD_LOGIC;
             ImmSrc: in STD_LOGIC_VECTOR(1 downto 0);
-            ALUControl: in STD_LOGIC_VECTOR(2 downto 0);
+            ALUControl: in STD_LOGIC_VECTOR(3 downto 0);
             Zero: out STD_LOGIC;
             PC: out STD_LOGIC_VECTOR(31 downto 0);
             Instr: in STD_LOGIC_VECTOR(31 downto 0);
@@ -44,7 +44,7 @@ architecture struct of riscvsingle is
     
     signal ALUSrc, RegWrite, Jump, Zero, PCSrc: STD_LOGIC;
     signal ResultSrc, ImmSrc: STD_LOGIC_VECTOR(1 downto 0);
-    signal ALUControl: STD_LOGIC_VECTOR(2 downto 0);
+    signal ALUControl: STD_LOGIC_VECTOR(3 downto 0);
     begin
         c:controller port map (Instr(6 downto 0),Instr(14 downto 12), Instr(30), Zero,ResultSrc,
             MemWrite, PCSrc, ALUSrc, RegWrite, Jump, ImmSrc, ALUControl);
