@@ -1,16 +1,57 @@
 v 4
-file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/and_gate.vhd" "36f6cdafd0787310177af1ab2cdbc3c003d34b54" "20261125002724.123":
-  entity and_gate at 1( 0) + 0 on 4;
-  architecture rtl of and_gate at 11( 153) + 0 on 4;
-file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/or_gate.vhd" "acff7083e86a45ecc09e2ab31db3119dddc6738f" "20261125002724.178":
-  entity or_gate at 1( 0) + 0 on 11;
-  architecture rtl of or_gate at 11( 152) + 0 on 12;
-file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "testBench/or_gate_tb.vhd" "6ad09989a98aa38ce0ba24514cf7bd4bfc1cbbcc" "20261125002724.178":
-  entity or_gate_tb at 1( 0) + 0 on 13;
-  architecture sim of or_gate_tb at 7( 78) + 0 on 14;
-file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/alu.vhd" "31eb133455a67553e3ce669b4f646820c624ea28" "20261125121830.414":
-  entity alu at 1( 0) + 0 on 15;
-  architecture rtl of alu at 15( 378) + 0 on 16;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "testBench/tb_regfile.vhd" "095cde8651c4b22f405f2a3259698301b53cd12e" "20261127184218.728":
+  entity tb_register_file at 1( 0) + 0 on 4;
+  architecture test of tb_register_file at 8( 120) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/dmem.vhd" "442a34daa1355108986783d4eae66bca4201d32c" "20261127184218.728":
+  entity dmem at 1( 0) + 0 on 4;
+  architecture behave of dmem at 13( 265) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/riscvsingle.vhd" "bdbd7e58d7da38960f477d46083ec9d847ac3cf5" "20261127184218.728":
+  entity riscvsingle at 1( 0) + 0 on 4;
+  architecture struct of riscvsingle at 15( 457) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/top.vhd" "5f02bab40f9a40ff129439340c5b2c2b5889cb02" "20261127184218.728":
+  entity top at 1( 0) + 0 on 4;
+  architecture test of top at 12( 251) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/controller.vhd" "4c34cb29a5a68fb788fddeb7271d3281ceead5c6" "20261127184218.728":
+  entity controller at 1( 0) + 0 on 4;
+  architecture struct of controller at 21( 541) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/maindec.vhd" "4b657de4c9e0a04407d8165a08205874796d13da" "20261127184218.727":
+  entity maindec at 1( 0) + 0 on 4;
+  architecture behave of maindec at 16( 394) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/datapath.vhd" "78da5c3b149155697057069671e061b329a7b0e8" "20261127184218.727":
+  entity datapath at 1( 0) + 0 on 4;
+  architecture struct of datapath at 18( 601) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/imem.vhd" "687f79c158c4bd6274654274342cced3f8be4c65" "20261127184218.727":
+  entity imem at 1( 0) + 0 on 4;
+  architecture behave of imem at 14( 261) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/aludec.vhd" "16343a61995d55b1f59562b24e94538f5c69c518" "20261127184218.727":
+  entity aludec at 1( 0) + 0 on 4;
+  architecture behave of aludec at 14( 299) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/generic.vhd" "b117e26fe33941fda46f9f3638bf5df99b09efea" "20261127184218.727":
+  entity flopr at 1( 0) + 0 on 4;
+  architecture asynchronous of flopr at 13( 325) + 0 on 4;
+  entity adder at 26( 595) + 0 on 4;
+  architecture behave of adder at 35( 788) + 0 on 4;
+  entity mux2 at 42( 950) + 0 on 4;
+  architecture behave of mux2 at 52( 1191) + 0 on 4;
+  entity mux3 at 59( 1332) + 0 on 4;
+  architecture behave of mux3 at 69( 1604) + 0 on 4;
+  entity extend at 78( 1786) + 0 on 4;
+  architecture behave of extend at 88( 2070) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/regfile.vhd" "21a84b238063edb17f20d49c21cdd49cc4d3247c" "20261127184218.727":
+  entity regfile at 1( 0) + 0 on 4;
+  architecture behave of regfile at 13( 323) + 0 on 4;
 file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "testBench/tb_alu.vhd" "017f0baeaf0bdfe45c4f777f84f09f5e6511e9b4" "20261125121830.414":
   entity tb_alu at 1( 0) + 0 on 17;
   architecture sim of tb_alu at 8( 94) + 0 on 18;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/alu.vhd" "b5100f969a032ec0ebc4f2f0e17ae936a7ed58a6" "20261127184218.727":
+  entity alu at 1( 0) + 0 on 4;
+  architecture rtl of alu at 15( 361) + 0 on 4;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "testBench/or_gate_tb.vhd" "6ad09989a98aa38ce0ba24514cf7bd4bfc1cbbcc" "20261125002724.178":
+  entity or_gate_tb at 1( 0) + 0 on 13;
+  architecture sim of or_gate_tb at 7( 78) + 0 on 14;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/or_gate.vhd" "acff7083e86a45ecc09e2ab31db3119dddc6738f" "20261125002724.178":
+  entity or_gate at 1( 0) + 0 on 11;
+  architecture rtl of or_gate at 11( 152) + 0 on 12;
+file "/home/ahmed-ishiba/fpga_dev/Home-made-RISC-V/" "rtl/and_gate.vhd" "36f6cdafd0787310177af1ab2cdbc3c003d34b54" "20261125002724.123":
+  entity and_gate at 1( 0) + 0 on 4;
+  architecture rtl of and_gate at 11( 153) + 0 on 4;
