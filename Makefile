@@ -15,6 +15,19 @@ SRC_alu           := rtl/alu.vhd
 SRC_register_file := rtl/regfile.vhd
 SRC_control_unit  := rtl/aludec.vhd rtl/maindec.vhd rtl/controller.vhd
 
+SRC_riscv := \
+	rtl/generic.vhd \
+    rtl/regfile.vhd \
+    rtl/alu.vhd \
+    rtl/datapath.vhd \
+    rtl/maindec.vhd \
+    rtl/aludec.vhd \
+    rtl/controller.vhd \
+    rtl/riscvsingle.vhd \
+    rtl/imem.vhd \
+    rtl/dmem.vhd \
+    rtl/top.vhd
+
 SRC := $(SRC_$(NAME))
 
 .PHONY: sim view clean
