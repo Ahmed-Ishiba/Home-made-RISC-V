@@ -19,7 +19,7 @@ architecture struct of riscvsingle is
             funct3: in STD_LOGIC_VECTOR(2 downto 0);
             funct7b5,Zero:in STD_LOGIC;
             ResultSrc : out STD_LOGIC_VECTOR(1 downto 0);
-            MemWrite out STD_LOGIC;
+            MemWrite :out STD_LOGIC;
             PCSrc,ALUSrc: out STD_LOGIC;
             RegWrite, Jump:out STD_LOGIC;
             ImmSrc: out STD_LOGIC_VECTOR(1 downto 0);
